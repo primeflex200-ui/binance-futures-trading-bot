@@ -1,0 +1,36 @@
+2025-12-30 11:21:53 - INFO - Market order requested: BUY 0.001 BTCUSDT
+2025-12-30 11:21:53 - ERROR - Invalid input: BINANCE_API_KEY environment variable is required
+2025-12-30 11:23:11 - INFO - Market order requested: BUY 0.001 BTCUSDT
+2025-12-30 11:23:11 - INFO - Connected to production - https://fapi.binance.com
+2025-12-30 11:23:11 - INFO - Placing MARKET order: BTCUSDT BUY 0.001
+2025-12-30 11:23:11 - ERROR - Request to /fapi/v1/order failed: 401 Client Error: Unauthorized for url: https://fapi.binance.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1767073991623&signature=65cf4ced6d8d0cc99ae858e6915bbd9b9596b973129da958ff76ae1c41df2775
+2025-12-30 11:23:11 - ERROR - Binance error: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action'}
+2025-12-30 11:23:11 - ERROR - Order failed: 401 Client Error: Unauthorized for url: https://fapi.binance.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1767073991623&signature=65cf4ced6d8d0cc99ae858e6915bbd9b9596b973129da958ff76ae1c41df2775
+2025-12-30 11:23:11 - ERROR - Traceback (most recent call last):
+  File "C:\Users\ksair\Downloads\python cli\src\market_orders.py", line 27, in place_market_order
+    response = client.place_order(
+  File "C:\Users\ksair\Downloads\python cli\src\binance_client.py", line 120, in place_order
+    response = self._request("POST", "/fapi/v1/order", params=params, signed=True)
+  File "C:\Users\ksair\Downloads\python cli\src\binance_client.py", line 70, in _request
+    response.raise_for_status()
+  File "C:\Users\ksair\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://fapi.binance.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1767073991623&signature=65cf4ced6d8d0cc99ae858e6915bbd9b9596b973129da958ff76ae1c41df2775
+
+2025-12-30 11:24:26 - INFO - Market order requested: BUY 0.001 BTCUSDT
+2025-12-30 11:24:26 - INFO - Connected to production - https://fapi.binance.com
+2025-12-30 11:24:26 - INFO - Placing MARKET order: BTCUSDT BUY 0.001
+2025-12-30 11:24:27 - ERROR - Request to /fapi/v1/order failed: 401 Client Error: Unauthorized for url: https://fapi.binance.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1767074066911&signature=1a883e099753abd648dcfcf7477706758e64e595a5167bff165459f6151c7681
+2025-12-30 11:24:27 - ERROR - Binance error: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action'}
+2025-12-30 11:24:27 - ERROR - Order failed: 401 Client Error: Unauthorized for url: https://fapi.binance.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1767074066911&signature=1a883e099753abd648dcfcf7477706758e64e595a5167bff165459f6151c7681
+2025-12-30 11:24:27 - ERROR - Traceback (most recent call last):
+  File "C:\Users\ksair\Downloads\python cli\src\market_orders.py", line 27, in place_market_order
+    response = client.place_order(
+  File "C:\Users\ksair\Downloads\python cli\src\binance_client.py", line 120, in place_order
+    response = self._request("POST", "/fapi/v1/order", params=params, signed=True)
+  File "C:\Users\ksair\Downloads\python cli\src\binance_client.py", line 70, in _request
+    response.raise_for_status()
+  File "C:\Users\ksair\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://fapi.binance.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1767074066911&signature=1a883e099753abd648dcfcf7477706758e64e595a5167bff165459f6151c7681
+
